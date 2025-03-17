@@ -10,7 +10,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: #666;	/*全体の文字色*/
-	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-family: "Open Sans", "Archivo Narrow", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
 	background: #fff;	/*背景色*/
@@ -22,6 +22,25 @@ ol {padding-left: 40px;padding-bottom: 15px;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
+
+
+.archivo-narrow-<uniquifier> {
+	font-family: "Archivo Narrow", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+  }
+
+
+  .open-sans-<uniquifier> {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+	  "wdth" 100;
+  }
+
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -59,9 +78,9 @@ a:hover {
 }
 /*メニューブロック内にあるロゴ画像*/
 #menubar h1 img {
-	height: 70px;	/*ロゴ画像の高さ。下の「#menubar ul li」の「line-height」の数字と合わせる。*/
+	height: 50px;	/*ロゴ画像の高さ。下の「#menubar ul li」の「line-height」の数字と合わせる。*/
 	float: left;	/*左に回り込み*/
-	padding: 0 50px;	/*上下、左右への余白*/
+	padding: 10px 50px;	/*上下、左右への余白*/
 }
 /*メニュー１個あたりの設定*/
 #menubar ul li {
@@ -108,10 +127,11 @@ header #logo img {
 }
 /*h2見出し*/
 #contents h2 {
+	font-family: "Open sans";
 	font-size: 40px;	/*文字サイズ*/
 	margin-bottom: 30px;	/*下に空ける余白*/
 	text-align: center;		/*文字をセンタリング*/
-	letter-spacing: 0.2em;	/*文字間隔を広くとる設定*/
+	/* letter-spacing: 0.2em; */	/*文字間隔を広くとる設定*/
 	color: #333;	/*文字色*/
 }
 /*h2見出しの１文字目*/
