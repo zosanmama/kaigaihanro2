@@ -267,7 +267,8 @@ footer .pr {display: block;font-size: 80%;}
 }
 /*アイコン画像１個あたりの設定*/
 #icon img {
-	width: 40px;	/*幅*/
+	/* width: 40px; */
+	height: 40px;	/*幅*/
 	margin: 30px 10px;	/*上下、左右への余白*/
 }
 
